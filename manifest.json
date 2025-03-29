@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "웹 페이지 단축키",
+  "description": "웹사이트를 단축키로 빠르게 열어보세요.",
+  "version": "1.0",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-page-1": {
+      "suggested_key": {
+        "default": "Ctrl+1"
+      },
+      "command": "openPage1"
+    },
+    "open-page-2": {
+      "suggested_key": {
+        "default": "Ctrl+2"
+      },
+      "command": "openPage2"
+    },
+    "open-page-3": {
+      "suggested_key": {
+        "default": "Ctrl+3"
+      },
+      "command": "openPage3"
+    },
+    "open-page-4": {
+      "suggested_key": {
+        "default": "Ctrl+4"
+      },
+      "command": "openPage4"
+    },
+    "open-page-5": {
+      "suggested_key": {
+        "default": "Ctrl+5"
+      },
+      "command": "openPage5"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
